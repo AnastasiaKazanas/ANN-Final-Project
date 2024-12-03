@@ -1,20 +1,22 @@
 # Fake News
-## Introduction
-add intro here
+## Introduction and Problem Statement
+- Clearly state the purpose and objectives of the project.
+- Provide context and background information on the topic.
+- Explain the problem or research question the project aims to address.
 
-## The importance of classifying fake news
-add info here
+## Methodology and Data 
+- Touch upon theory if it is necessary to understand your work.
+- Describe the project design, analysis techniques, pre-processing and the - - Neural Network(s) you expect to use.
+- List any data, resources, etc. needed to carry out the project.
 
-## Index
-1. [Approach](#approach)
-2. [Preprocessing the data](#preprocessing-the-data)
-3. [Creating, training and evaluating the model](#creating-the-model)
-4. [Conclusion](#conclusion)
+## Results
+- Outline the results and findings of the project.
+- Prepare plots and figures to show the results - ensure they are clear, concise, and relevant.
 
-### Approach
+## Discussion 
+- Discuss the context of your results, how the results relate to each other and how to interpret them.
+- Revisit challenges you encountered and how you mitigated or solved them.
+- If applicable, put your project in relation to other work in the same field.
 
-### Preprocessing the data
-
-### Creating the Model 
-
-### Conclusion
+## Conclusion
+- Summarize the main results and implications of your project.
