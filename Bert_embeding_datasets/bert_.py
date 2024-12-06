@@ -14,6 +14,7 @@ import torch
 import pickle
 from transformers import BertTokenizer, BertModel, BertForSequenceClassification
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.utils import shuffle
 
 # !pip install tensorflow
 
@@ -68,11 +69,13 @@ print(texts[:1])
 
 print(len(texts[0]))
 
-# Split the dataset
-train_texts, test_texts, train_labels, test_labels = train_test_split(
-    df['text'], df['label'], test_size=0.2, random_state=42
-)
-
+# randomise the dataset
+# train_texts, test_texts, train_labels, test_labels = train_test_split(
+#     df['text'], df['label'], test_size=0.2, random_state=42
+# )
+print(dataset[0])
+dataset = shuffle(dataset, random_state=42)
+print(dataset[0])
 #tokenize with bert
 #mattias says to put this into batches (XXX - ?)
 
@@ -84,7 +87,7 @@ def encode_text(texts):
     return tokenizer(texts, padding=True, truncation=True, max_length=512, return_tensors='tf')
 
 # Tokenize the text data
-#train_encodings = encode_text(texts[:10])
+# train_encodings = encode_text(texts[:10])
 
 """
 
