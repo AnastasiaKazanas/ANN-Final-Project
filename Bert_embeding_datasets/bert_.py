@@ -85,6 +85,14 @@ def encode_text(texts):
 
 # Tokenize the text data
 #train_encodings = encode_text(texts[:10])
+
+"""
+
+MAKE SURE THAT THE MAX LENGTH IS THE LONGEST TWEET SIZE FOR EACH FILE
+MAKE A RESULT TABLE THAT SHOWS THE MAX_LENGTH OF EACH DATASET
+MAX len
+
+"""
 train_encodings = tokenizer(list(train_texts), padding=True, truncation=True, max_length=512, return_tensors='pt')
 test_encodings = tokenizer(list(test_texts), padding=True, truncation=True, max_length=512, return_tensors='pt')
 
