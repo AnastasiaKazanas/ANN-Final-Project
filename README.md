@@ -153,7 +153,7 @@ We used the following datasets from Kaggle:
         
     Bag of Words models represent text as a collection of word counts without capturing the context or relationships between words. For a nuanced and complex topic like COVID-19,     context is crucial for distinguishing between real and fake news, which BOW cannot handle effectively.
     
-### Insight About Logistic Regression Performing as Well as FCNN
+### 4.1 Insight About Logistic Regression Performing as Well as FCNN
 
 Interestingly, Logistic Regression performed almost as well as FCNN in most scenarios, suggesting that certain individual words or phrases carry significant predictive power for distinguishing real from fake news. This observation highlights a few key points:
 
