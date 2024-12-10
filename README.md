@@ -4,13 +4,13 @@
 In today’s digital world, social media spreads information quickly, but it has also fueled the rise of fake news. Designed to mislead, fake news undermines trust and distorts our understanding of important events. Our project uses machine learning to distinguish real news from fake, helping to promote reliable media consumption.
 ### Purpose and Objectives of the Project
 Our goal is to create a machine learning model that accurately classifies news articles as real or fake, utilizing both Bag of Words and BERT embeddings for feature representation. By doing so, we aim to provide a tool that helps individuals verify information and make informed decisions. The key objectives of our project are:
-	•	Train a reliable model using both Bag of Words and BERT embeddings on diverse datasets, including a 2017 news article dataset and a Twitter dataset.
-  •	Evaluate the model’s accuracy and reliability across different contexts.
+  - Train a reliable model using both Bag of Words and BERT embeddings on diverse datasets, including a 2017 news article dataset and a Twitter dataset.
+  - Evaluate the model’s accuracy and reliability across different contexts.
 ### Problem Questions
 This project explores the following research questions:
-	•	How can machine learning effectively differentiate between real and fake news articles?
-	•	Which features of news content are most indicative of authenticity or falsehood?
-	•	How can fake news detection models be optimized to reduce misclassification and enhance public trust in automated tools?
+	- How can machine learning effectively differentiate between real and fake news articles?
+	- Which features of news content are most indicative of authenticity or falsehood?
+	- How can fake news detection models be optimized to reduce misclassification and enhance public trust in automated tools?
 
 By addressing these questions, we aim to develop a scalable, evidence-based solution to combat misinformation and empower individuals to make informed decisions using credible sources.
 
