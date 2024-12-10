@@ -1,19 +1,18 @@
 # Combating Fake News with Machine Learning
 ## Introduction and Problem Statement
 ### Context and Background Information
-In our digital age, the rapid dissemination of information via social media has given rise to a troubling era of misinformation. Fake news, often created with the intent to mislead, has become a rampant issue that compromises public trust and skews societal understanding of critical events. Our project utilizes advanced machine learning techniques to differentiate between real and fake news, aiming to restore integrity to media consumption.
+In today’s digital world, social media spreads information quickly, but it has also fueled the rise of fake news. Designed to mislead, fake news undermines trust and distorts our understanding of important events. Our project uses machine learning to distinguish real news from fake, helping to promote reliable media consumption.
 ### Purpose and Objectives of the Project
-Our goal is to develop a machine learning model capable of accurately classifying news articles. By distinguishing between authentic and fabricated news, we aim to provide a tool that helps individuals verify information and make well-informed decisions. The specific objectives of our project are:
-- To train a robust model using a diverse dataset of news articles from 2017.
-- To test the model’s ability to adapt to new and emerging topics such as '5G' and 'COVID'.
-- To evaluate the model's performance in varied contexts to ensure its accuracy and reliability.
+Our goal is to create a machine learning model that accurately classifies news articles as real or fake, utilizing both Bag of Words and BERT embeddings for feature representation. By doing so, we aim to provide a tool that helps individuals verify information and make informed decisions. The key objectives of our project are:
+	•	Train a reliable model using both Bag of Words and BERT embeddings on diverse datasets, including a 2017 news article dataset and a Twitter dataset.
+  •	Evaluate the model’s accuracy and reliability across different contexts.
 ### Problem Questions
-This project addresses the following research questions:
-- How can machine learning be effectively utilized to distinguish between real and fake news articles?
-- What features or characteristics of news content are most indicative of authenticity or falsehood?
-- How can the performance and accuracy of fake news detection models be optimized to minimize misclassification and improve public trust in automated tools?
+This project explores the following research questions:
+	•	How can machine learning effectively differentiate between real and fake news articles?
+	•	Which features of news content are most indicative of authenticity or falsehood?
+	•	How can fake news detection models be optimized to reduce misclassification and enhance public trust in automated tools?
 
-By tackling these questions, we seek to provide an evidence-based, scalable solution to counteract the spread of misinformation and empower individuals to make informed decisions based on credible sources.
+By addressing these questions, we aim to develop a scalable, evidence-based solution to combat misinformation and empower individuals to make informed decisions using credible sources.
 
 ## Methodology and Data 
 ### Theoretical Framework
