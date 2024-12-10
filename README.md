@@ -8,6 +8,8 @@
 
 In today’s digital world, social media has made it easier than ever to share information, but it has also amplified the spread of fake news. This misinformation undermines trust in media and makes it harder for individuals to determine which sources are reliable. Our project tackles this issue by using machine learning techniques to classify news articles and social media posts as real or fake. By doing so, we aim to promote more reliable media consumption and combat the spread of misinformation.
 
+**As seen below...**
+
 <div style="display: flex; justify-content: space-around;">
   <img src="https://github.com/user-attachments/assets/cfb54d1c-76c6-42c7-850b-36d141601a41" alt="Image 1" width="500"/>
   <img src="https://github.com/user-attachments/assets/0bce7500-8ccf-4e42-bab7-fff2798e150e" alt="Image 2" width="500"/>
@@ -167,4 +169,4 @@ Logistic Regression’s strong performance shows that for this task, the relatio
 
 This project demonstrated the effectiveness of machine learning models in distinguishing real and fake news. While BOW models performed consistently well, challenges with data quality and computational limitations highlighted areas for improvement. Future work could focus on refining preprocessing techniques, expanding dataset coverage, and leveraging more computational resources for BERT models.
 
-
+**Presentation Link**: https://docs.google.com/presentation/d/1G1oTerb_HOjSipo4u55pR_1wD2zERMPVxJUTXobLqfo/edit?usp=sharing
