@@ -22,14 +22,17 @@ This project explores the following research questions:
   - How can machine learning effectively differentiate between real and fake news articles?
   - Which features of news content are most indicative of authenticity or falsehood?
   - How can fake news detection models be optimized to reduce misclassification and enhance public trust in automated tools?
-  - 
+    
 By addressing these questions, we aim to develop a scalable, evidence-based solution to combat misinformation and empower individuals to make informed decisions using credible sources!
 
-## 2. - Methodology and Data 
+## 2. Methodology and Data 
+
 ### 2.1. Theoretical Framework
 This project is based on natural language processing (NLP) and machine learning. We used techniques like Bag of Words and BERT embeddings to represent text and applied models such as Fully Connected Neural Networks (FCNN) and Logistic Regression for classification. These methods help capture patterns in text data to accurately distinguish between real and fake news.
+
 ### 2.2. Project Design
 The project involves several stages:
+
 #### 1. Data Collection and Preprocessing
 We used datasets from platforms like Kaggle, covering general news, Twitter feeds, and specific topics like COVID-19. Preprocessing steps included text normalization, tokenization, and stopword removal to prepare the data for analysis.
 
@@ -46,14 +49,32 @@ We used datasets from platforms like Kaggle, covering general news, Twitter feed
      - (44,898 news articles; 21,417 real news; 23,481 fake news)
 
 
-#### 2. Model Development
-We began with simpler models for baseline performance, such as Logistic Regression, and advanced to more complex approaches like Fully Connected Neural Networks (FCNN). Feature extraction techniques included Bag of Words and BERT embeddings.
-#### 3. Model Validation
-To ensure robust performance, we used cross-validation and tested the models on various datasets to confirm consistency and adaptability.
-#### 4. Resources and Data
-We sourced our datasets from reputable platforms like Kaggle, encompassing various types of news contexts including general news, Twitter feeds, and COVID-19 related news. The data preprocessing phase involved normalizing text, removing noise, and employing techniques like tokenization and stopwords removal.
+#### 2. Model Development & Code Layout
+
+    1. BOW - FCNN
+        
+        1. Loaded in the dataset (Kaggle)
+        2. Delt with missing values/ preprocess text/ filtering (talked about later)
+        3. TF-IDF/ tensor dataset
+        4. Created neural network, trained, and evaluated it
+        
+            (lr= 0.001, hidden dim= 128, output dim = 2, 10 epochs)
+
+    2. BOW - LR
+
+        1. Loaded in the dataset (Kaggle)
+        2. Delt with missing values/ preprocess text/ filtering (talked about later)
+        3. TF-IDF/ tensor dataset
+        4. Train model with LR
+
+            LogisticRegression(max_iter=200, solver='saga', penalty='l2', C=1.0)
+        
+        5. Predicted on test set
+        (single class case)
+
+
 #### 5. Evaluation
-We evaluated model reliability through cross-validation and extensive testing across datasets. This process reduced overfitting and improved generalizability, ensuring the models are effective in real-world scenarios.
+We evaluated the reliability of our models by analyzing confusion matrices and comparing their accuracy scores. This allowed us to better understand the models’ performance, particularly their ability to correctly classify real and fake news while minimizing misclassifications.
 
 ## 3. - Results & Discussion 
 ### 3.1 Context of the Results
