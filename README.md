@@ -28,15 +28,17 @@ To ensure robust performance, we used cross-validation and tested the models on 
 We sourced our datasets from reputable platforms like Kaggle, encompassing various types of news contexts including general news, Twitter feeds, and COVID-19 related news. The data preprocessing phase involved normalizing text, removing noise, and employing techniques like tokenization and stopwords removal.
 #### 5. Evaluation
 We evaluated model reliability through cross-validation and extensive testing across datasets. This process reduced overfitting and improved generalizability, ensuring the models are effective in real-world scenarios.
-### 6. Results
+
+## 3 - Results & Discussion 
+### 3.1 Context of the Results
+
 We achieved promising results, with our models demonstrating high accuracy rates in distinguishing between real and fake news. The models performed well across various contexts, including newer topics incorporated post-training (for Bag of Words).
 
-## 3 - Discussion 
-### Context of the Results
-(NEEDS EDIT) Our results show that the models are capable of learning and generalizing from the training data to effectively classify new, unseen data. This suggests that with continuous updates and training, such models can remain effective as the landscape of news evolves.
-### Challenges Encountered
+Our results show that the models are capable of learning and generalizing from the training data to effectively classify new, unseen data. This suggests that with continuous updates and training, such models can remain effective as the landscape of news evolves.
+
+### 3.2 Challenges Encountered
 Running BERT proved particularly challenging, and we were only able to complete it on the 2017 and Twitter datasets. Additionally, our datasets contained many duplicate entries, making the data cleaning process more complex and time-consuming. To address these challenges, we refined our models and dedicated significant effort to thorough data preprocessing.
-### Relation to Other Works
+### 3.3 Relation to Other Works
 This project builds on prior research in NLP and fake news detection, extending it by utilizing both traditional methods like Bag of Words and advanced techniques such as BERT embeddings. It further innovates by exploring newer neural network architectures and evaluating model adaptability to evolving topics, including COVID-19.
 
 ## 4 - Conclusion
