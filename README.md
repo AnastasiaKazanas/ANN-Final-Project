@@ -30,23 +30,22 @@ By addressing these questions, we aim to develop a scalable, evidence-based solu
 ### 2.1. Theoretical Framework
 This project is based on natural language processing (NLP) and machine learning. We used techniques like Bag of Words and BERT embeddings to represent text and applied models such as Fully Connected Neural Networks (FCNN) and Logistic Regression for classification. These methods help capture patterns in text data to accurately distinguish between real and fake news.
 
-### 2.2. Project Design
-The project involves several stages:
+### 2.2. The project involves several stages:
 
 #### 1. Data Collection and Preprocessing
 We used datasets from platforms like Kaggle, covering general news, Twitter feeds, and specific topics like COVID-19. Preprocessing steps included text normalization, tokenization, and stopword removal to prepare the data for analysis.
 
- - Dataset 1: Fake News Classification
-     - (72,134 news articles;  35,028 real news; 37,106 fake news)
+    1. Dataset 1: Fake News Classification
+         - (72,134 news articles;  35,028 real news; 37,106 fake news)
        
- - Dataset 2: Twitter Dataset
-     - (134,200 tweets, 68,900 real tweets, 65,300 fake tweets)
+    2. Dataset 2: Twitter Dataset
+         - (134,200 tweets, 68,900 real tweets, 65,300 fake tweets)
 
- - Dataset 3: Covid 19 Fake News 
-     - (8,560 news articles; 4,451 real news; 4,109 fake news)
+    3. Dataset 3: Covid 19 Fake News 
+         - (8,560 news articles; 4,451 real news; 4,109 fake news)
   
- - Dataset 4:  Fake News Detection
-     - (44,898 news articles; 21,417 real news; 23,481 fake news)
+    4. Dataset 4:  Fake News Detection
+         - (44,898 news articles; 21,417 real news; 23,481 fake news)
 
 
 #### 2. Model Development & Code Layout
@@ -73,20 +72,61 @@ We used datasets from platforms like Kaggle, covering general news, Twitter feed
         (single class case)
 
 
-#### 5. Evaluation
+#### 3. Evaluation
+
 We evaluated the reliability of our models by analyzing confusion matrices and comparing their accuracy scores. This allowed us to better understand the models’ performance, particularly their ability to correctly classify real and fake news while minimizing misclassifications.
 
-## 3. - Results & Discussion 
-### 3.1 Context of the Results
+## 3. Results & Discussion 
 
-We achieved promising results, with our models demonstrating high accuracy rates in distinguishing between real and fake news. The models performed well across various contexts, including newer topics incorporated post-training (for Bag of Words).
+### 3.1 BOW 
 
-Our results show that the models are capable of learning and generalizing from the training data to effectively classify new, unseen data. This suggests that with continuous updates and training, such models can remain effective as the landscape of news evolves.
+1.  FCNN
 
-### 3.2 Challenges Encountered
-Running BERT proved particularly challenging, and we were only able to complete it on the 2017 and Twitter datasets. Additionally, our datasets contained many duplicate entries, making the data cleaning process more complex and time-consuming. To address these challenges, we refined our models and dedicated significant effort to thorough data preprocessing.
-### 3.3 Relation to Other Works
-This project builds on prior research in NLP and fake news detection, extending it by utilizing both traditional methods like Bag of Words and advanced techniques such as BERT embeddings. It further innovates by exploring newer neural network architectures and evaluating model adaptability to evolving topics, including COVID-19.
+<img width="871" alt="image" src="https://github.com/user-attachments/assets/cadb218b-42bd-46ed-92cb-81b77fbf1e5a">
+ 
+2.  LR
+    
+<img width="871" alt="image" src="https://github.com/user-attachments/assets/e82a99c6-406e-405b-bb6c-2d71367c1664">
 
-## 4. - Conclusion
-The success of our project indicates that machine learning can be an effective tool against the spread of misinformation. By continuing to refine our models and expand their capabilities, we aim to create a reliable tool that can play a crucial role in the fight for truth in media.
+#### Thoughts
+
+    - Extremely high accuracy raised flags
+    - Looked into the data and realized the data sets were not as great as we thought…. Lots of duplicates, empty entries, etc..
+    - Applied filters (min of 50 chars, not empty, not a duplicate) to combat this 
+    - Accuracy was still extremely high…
+
+### 3.2 BERT
+
+1.  FCNN
+
+<img width="433" alt="image" src="https://github.com/user-attachments/assets/4d07d4a7-8149-4892-91bf-4ca440a2561f">
+
+2.  LR
+
+<img width="433" alt="image" src="https://github.com/user-attachments/assets/12024e15-a3d8-41c4-9e4d-e9744bc1185d">
+
+### 3.3 How It Went
+
+#### What went right
+
+1. Building a model using a Bag of words (FCNN and LR)
+2. Preprocessing to combat issues with data
+3. Testing model on varied datasets
+
+#### Challenges
+
+1. Data problems
+    2.  Extracting the data
+    3.  The data itself
+4. Embedding issues
+5. BERT 
+
+    - Running BERT proved particularly challenging, and we were only able to complete it on the 2017 and Twitter datasets. 
+      
+### So...Can the BOW-FCNN predict the future?
+
+#### Findings:
+
+    - The only test we were able to complete involved evaluating whether our fake news classification model could predict outcomes on a COVID-19 dataset. We used the bag-of-words        method in combination with an FCNN model to train the classifier. However, the results showed only 50% accuracy, indicating that the model had no predictive power for             future scenarios.
+
+<img width="652" alt="image" src="https://github.com/user-attachments/assets/f1a57560-77b2-4c9a-923a-8482a78b2063">
