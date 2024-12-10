@@ -16,19 +16,19 @@ By addressing these questions, we aim to develop a scalable, evidence-based solu
 
 ## Methodology and Data 
 ### Theoretical Framework
-The project is grounded in natural language processing (NLP) and machine learning, utilizing neural networks like LSTM and Transformers to capture the contextual relationships in text data. These technologies are well-suited for processing the sequential nature of language and extracting meaningful patterns that are crucial for classification tasks.
+This project is based on natural language processing (NLP) and machine learning. We used techniques like Bag of Words and BERT embeddings to represent text and applied models such as Fully Connected Neural Networks (FCNN) and Logistic Regression for classification. These methods help capture patterns in text data to accurately distinguish between real and fake news.
 ### Project Design
 The project involves several stages:
 #### Data Collection and Preprocessing
-Utilizing datasets from sources like Kaggle, which include general news, Twitter feeds, and specific topics like COVID-19. Text normalization, tokenization, and removal of stopwords are key preprocessing steps.
+We used datasets from platforms like Kaggle, covering general news, Twitter feeds, and specific topics like COVID-19. Preprocessing steps included text normalization, tokenization, and stopword removal to prepare the data for analysis.
 #### Model Development
-Starting with simpler classifiers for baseline measurements and progressing to more complex neural networks. Techniques like TF-IDF and word embeddings are used for feature extraction.
+We began with simpler models for baseline performance, such as Logistic Regression, and advanced to more complex approaches like Fully Connected Neural Networks (FCNN). Feature extraction techniques included Bag of Words and BERT embeddings.
 #### Model Validation
-Using cross-validation and other techniques to ensure the model performs well across different datasets.
+To ensure robust performance, we used cross-validation and tested the models on various datasets to confirm consistency and adaptability.
 ### Recsources and Data
 We sourced our datasets from reputable platforms like Kaggle, encompassing various types of news contexts including general news, Twitter feeds, and COVID-19 related news. The data preprocessing phase involved normalizing text, removing noise, and employing techniques like tokenization and stopwords removal.
 ### Evaluation
-To ensure the reliability of our models, we employed cross-validation techniques and rigorous testing across different datasets. This approach helped in fine-tuning our models and reducing overfitting, thereby improving their generalizability and effectiveness in real-world scenarios.
+We evaluated model reliability through cross-validation and extensive testing across datasets. This process reduced overfitting and improved generalizability, ensuring the models are effective in real-world scenarios.
 
 ## Results
 We achieved promising results, with our models demonstrating high accuracy rates in distinguishing between real and fake news. The models performed well across various contexts, including newer topics incorporated post-training.
