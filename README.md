@@ -25,12 +25,11 @@ We used datasets from platforms like Kaggle, covering general news, Twitter feed
 We began with simpler models for baseline performance, such as Logistic Regression, and advanced to more complex approaches like Fully Connected Neural Networks (FCNN). Feature extraction techniques included Bag of Words and BERT embeddings.
 #### Model Validation
 To ensure robust performance, we used cross-validation and tested the models on various datasets to confirm consistency and adaptability.
-### Recsources and Data
+#### Resources and Data
 We sourced our datasets from reputable platforms like Kaggle, encompassing various types of news contexts including general news, Twitter feeds, and COVID-19 related news. The data preprocessing phase involved normalizing text, removing noise, and employing techniques like tokenization and stopwords removal.
-### Evaluation
+#### Evaluation
 We evaluated model reliability through cross-validation and extensive testing across datasets. This process reduced overfitting and improved generalizability, ensuring the models are effective in real-world scenarios.
-
-## Results
+### Results
 We achieved promising results, with our models demonstrating high accuracy rates in distinguishing between real and fake news. The models performed well across various contexts, including newer topics incorporated post-training.
 
 ## Discussion 
