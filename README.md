@@ -7,7 +7,7 @@ Our goal is to create a machine learning model that accurately classifies news a
   - Train a reliable model using both Bag of Words and BERT embeddings on diverse datasets.
   - Determine whether we could accurately predict the likelihood of something being real or fake.
   - Evaluate the model’s accuracy and reliability across different contexts. Use this to determine whether BERT embeddings outperform Bag of Words in accuracy and effectiveness.
-  - To determine if past data can be used to predict whether a newer news article is real or fake.
+  - To determine if past data can be used to predict whether a more recent news article is real or fake.
 ### 1.3. Problem Questions
 This project explores the following research questions:
   - How can machine learning effectively differentiate between real and fake news articles?
