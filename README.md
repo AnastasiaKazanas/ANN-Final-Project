@@ -147,13 +147,13 @@ We used the following datasets from Kaggle:
   
     1. **Novelty of the Topic**:
        
-    The COVID-19 dataset includes news articles about a specific, unprecedented global event that emerged after the training data was collected. The vocabulary, phrasing, and context of COVID-related articles may not have been present in the datasets used for training, causing the model to struggle when generalizing to this new topic.
+    The COVID-19 dataset includes news articles about a specific, unprecedented global event that emerged after the training data was collected. The vocabulary, phrasing, and         context of COVID-related articles may not have been present in the datasets used for training, causing the model to struggle when generalizing to this new topic.
     	
      2.	**Lack of Contextual Understanding**:
         
-    Bag of Words models represent text as a collection of word counts without capturing the context or relationships between words. For a nuanced and complex topic like COVID-19, context is crucial for distinguishing between real and fake news, which BOW cannot handle effectively.
+    Bag of Words models represent text as a collection of word counts without capturing the context or relationships between words. For a nuanced and complex topic like COVID-19,     context is crucial for distinguishing between real and fake news, which BOW cannot handle effectively.
     
-#### Insight About Logistic Regression Performing as Well as FCNN
+### Insight About Logistic Regression Performing as Well as FCNN
 
 Interestingly, Logistic Regression performed almost as well as FCNN in most scenarios, suggesting that certain individual words or phrases carry significant predictive power for distinguishing real from fake news. This observation highlights a few key points:
 
