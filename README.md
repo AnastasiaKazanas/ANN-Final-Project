@@ -129,12 +129,12 @@ We used the following datasets from Kaggle:
 
 ### 3.2. Challenges
 
-- **Data Issues**:
+1. **Data Issues**:
   
   - Datasets contained duplicates, missing values, and empty entries.  
   - We applied filters (e.g., minimum character count, removing duplicates) to improve quality.  
 
-- **Embedding Issues**:
+2. **Embedding Issues**:
   
   - Computational limits restricted BERT to only two datasets (Fake News Classification and Twitter).
     
