@@ -8,9 +8,9 @@ Our goal is to create a machine learning model that accurately classifies news a
   - Evaluate the model’s accuracy and reliability across different contexts.
 ### Problem Questions
 This project explores the following research questions:
-	- How can machine learning effectively differentiate between real and fake news articles?
-	- Which features of news content are most indicative of authenticity or falsehood?
-	- How can fake news detection models be optimized to reduce misclassification and enhance public trust in automated tools?
+  - How can machine learning effectively differentiate between real and fake news articles?
+  - Which features of news content are most indicative of authenticity or falsehood?
+  - How can fake news detection models be optimized to reduce misclassification and enhance public trust in automated tools?
 
 By addressing these questions, we aim to develop a scalable, evidence-based solution to combat misinformation and empower individuals to make informed decisions using credible sources.
 
