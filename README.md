@@ -30,14 +30,14 @@ We sourced our datasets from reputable platforms like Kaggle, encompassing vario
 #### Evaluation
 We evaluated model reliability through cross-validation and extensive testing across datasets. This process reduced overfitting and improved generalizability, ensuring the models are effective in real-world scenarios.
 ### Results
-We achieved promising results, with our models demonstrating high accuracy rates in distinguishing between real and fake news. The models performed well across various contexts, including newer topics incorporated post-training.
+We achieved promising results, with our models demonstrating high accuracy rates in distinguishing between real and fake news. The models performed well across various contexts, including newer topics incorporated post-training (for Bag of Words).
 
 ## Discussion 
 ### Context of the Results
-Our results show that the models are capable of learning and generalizing from the training data to effectively classify new, unseen data. This suggests that with continuous updates and training, such models can remain effective as the landscape of news evolves.
+(NEEDS EDIT) Our results show that the models are capable of learning and generalizing from the training data to effectively classify new, unseen data. This suggests that with continuous updates and training, such models can remain effective as the landscape of news evolves.
 ### Challenges Encountered
-Challenges included data bias, which could lead to misclassifications, and computational limitations that affected the speed and scalability of our training processes. We addressed these by refining our models and incorporating feedback loops that allow the models to learn from their mistakes.
+Running BERT proved particularly challenging, and we were only able to complete it on the 2017 and Twitter datasets. Additionally, our datasets contained many duplicate entries, making the data cleaning process more complex and time-consuming. To address these challenges, we refined our models and dedicated significant effort to thorough data preprocessing.
 ### Relation to Other Works
-This project builds on existing work in NLP and fake news detection but pushes the boundaries by testing newer neural network architectures and adapting to rapidly changing news topics.
+This project builds on prior research in NLP and fake news detection, extending it by utilizing both traditional methods like Bag of Words and advanced techniques such as BERT embeddings. It further innovates by exploring newer neural network architectures and evaluating model adaptability to evolving topics, including COVID-19.
 ## Conclusion
 The success of our project indicates that machine learning can be an effective tool against the spread of misinformation. By continuing to refine our models and expand their capabilities, we aim to create a reliable tool that can play a crucial role in the fight for truth in media.
